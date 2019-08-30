@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
-import "./App.css";
+import "./App.scss";
 import PhotoCard from "./components/PhotoCard"
 
 function App() {
@@ -19,9 +19,10 @@ function App() {
   
   return (
     <div className="App">
-      
+      <div className= "photo-cards"> 
       <PhotoCard  title={data.title} url={data.url}
       explanation= {data.explanation} />
+     </div>
     </div>
   );
 }
